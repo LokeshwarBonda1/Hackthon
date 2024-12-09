@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/head :: head"></head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="Hero Background">
+    </div>
+    <header th:replace="/fragments/header :: header"></header>
+  </div>
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Welcome to Modern Makeovers</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            "Elevate Your Living Space, Increase Your Property Value"
+            The value and appeal of Indian middle-class homes. We provide practical ideas, expert recommendations, and affordable solutions to transform your living space into a more attractive and valuable asset. Whether you’re looking to renovate, modernize, or simply refresh your home, we’ve got you covered. Let’s unlock your property’s true potential together
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="images/about-us.jpeg" alt="About Us Image" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- services section -->
+  <section class="services_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Our Services</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service_box">
+            <img src="images/home-renovations.jpg" alt="Home Renovations" style="width: 100%;">
+            <h3>Home Renovations</h3>
+            <p>From minor updates to full-scale home remodels, we offer renovation services that transform your living
+              space.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service_box">
+            <img src="images/kitchen-remodeling.webp" alt="Kitchen Remodeling" style="width: 100%;">
+            <h3>Kitchen Remodeling</h3>
+            <p>We create beautiful and functional kitchen spaces tailored to your cooking and lifestyle needs.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service_box">
+            <img src="images/bathroom-upgrades.jpg" alt="Bathroom Upgrades" style="width: 100%;">
+            <h3>Bathroom Upgrades</h3>
+            <p>Turn your bathroom into a modern sanctuary with our elegant and functional designs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end services section -->
+
+  <!-- testimonials section -->
+  <section class="testimonials_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="testimonial_box">
+            <p>
+              "Modern Makeovers did an incredible job with our home renovation! The team was professional, efficient, and
+              truly brought our vision to life."
+            </p>
+            <h5>- Sarah J.</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="testimonial_box">
+            <p>
+              "We absolutely love our new kitchen! The attention to detail was amazing, and the process was smooth from
+              start to finish."
+            </p>
+            <h5>- Michael R.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end testimonials section -->
+
+  <footer th:replace="/fragments/footer :: footer"></footer>
+
+</body>
+
+</html>

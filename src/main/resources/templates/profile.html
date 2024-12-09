@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+    <div th:if="${isLoggedIn}">
+        <h1>Welcome, <span th:text="${user.fullName}">User</span>!</h1>
+        <p>Email: <span th:text="${user.email}">user@example.com</span></p>
+        <!-- Add more user details here -->
+        
+        <!-- Button to go to Home page -->
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+    </div>
+    
+    <div th:if="${!isLoggedIn}">
+        <h1>Please log in to view your profile.</h1>
+    </div>
+    
+    <a th:href="@{/logout}">Logout</a>
+</body>
+</html>
